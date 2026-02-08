@@ -1,0 +1,18 @@
+﻿<h2>Contact me</h2>
+
+@if (ViewBag.Error != null)
+{
+    <p class="error">@ViewBag.Error</p>
+}
+
+@if (ViewBag.Success != null)
+{
+    <p class="success">@ViewBag.Success</p>
+}
+
+<form method="post">
+    <input type="text" name="Name" placeholder="Your Name" />
+    <input type="email" name="Email" placeholder="Email" />
+    <textarea name="Message" placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+</form>

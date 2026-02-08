@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tural Alibeyli Portfolio</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <nav class="nav">
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-action="Skills">Skills</a>
+        <a asp-action="Projects">Projects</a>
+        <a asp-action="About">About</a>
+        <a asp-action="Contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+</body>
+</html>
