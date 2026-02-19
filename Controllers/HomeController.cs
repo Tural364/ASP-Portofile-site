@@ -60,7 +60,7 @@ public class HomeController : Controller
         return View();
     }
 
-    private void SendEmail(string to, string subject, string body)
+    public void SendEmail(string to, string subject, string body)
     {
         SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
         smtp.Credentials = new NetworkCredential("alibeylitural212@gmail.com", "");
